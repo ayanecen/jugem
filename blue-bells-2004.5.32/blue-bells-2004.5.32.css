@@ -1,0 +1,200 @@
+/* body-------------------------------------------------------------------------- */
+body 	{
+ 	font-family:"MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+ 	margin: 0px 0px 0px 0px;
+ 	background-color: snow;
+ 	scrollbar-3dlight-color:    snow;
+ 	scrollbar-arrow-color:      #000000;
+ 	scrollbar-base-color:       #000000;
+ 	scrollbar-darkshadow-color: snow;
+ 	scrollbar-face-color:       snow;
+ 	scrollbar-highlight-color:  #000000;
+ 	scrollbar-shadow-color:     #000000;
+ 	scrollbar-track-color:      snow;
+ 	cursor: crosshair;
+ 	color: #666666;
+ 	font-size: 12px;
+ 	line-height: 150%;
+ 	}
+/* 	background-image: url(http://www.blueb.jp/gal/2003/merry_christmas/merry_christmas.jpg);
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-position: center center;*/
+/* a----------------------------------------------------------- */
+
+a:link 		{ color:#333333; 	text-decoration:underline; 	cursor: default;}
+a:visited 	{ color:#333333; 	text-decoration:none; 		cursor: default;}
+a:active 	{ color:#DC143C; 	text-decoration:none;	cursor: default;}
+a:hover 	{ color:#DC143C; 	text-decoration:underline;	cursor: default; 
+		position: relative; 	top: 2px; 	left: 2px;}
+
+
+h1 {	margin: 0px 0px 10px 0px;}
+ul {	margin: 0px 0px 0px 15px;}
+
+#title{
+    font-family: "Horn","Verdana","MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","MS Pゴシック","Osaka";
+}
+
+.site_title {font-weight: bolder;}
+
+
+.description {font-size: 9px;}
+
+
+.flat {
+    margin: 0px 0px 0px 0px;
+    background:url(../template/flat/img/flat.gif);
+    }
+
+.entry_link {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 12px;
+    color: gray;
+    line-height: 170%;
+    margin: 10px 0px 5px 0px;
+
+}
+
+.entry {
+    margin: 10px 5px 10px 5px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #FFCCCC;
+    background-color: snow;
+    filter: Alpha(opacity=75);
+}
+
+
+
+.entry_date {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 14px;
+    font-weight: bolder;
+    color: #2751B2;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+
+.entry_title {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 12px;
+    font-weight: bolder;
+    color: #000000;
+    margin: 10px 20px 10px 20px;
+    }
+
+
+.entry_body {
+    font-size: small;
+    line-height: 150%;
+    color: #666666;
+    margin: 0px 20px 0px 20px;
+    }
+
+
+.entry_more {
+    font-size: small;
+    line-height: 150%;
+    color: #666666;
+    margin: 0px 20px 0px 20px;
+    }
+
+
+.entry_state {
+    text-align: rignt;
+    font-size: 10px;
+    color: #999999;
+    margin: 15px 10px 15px 10px;
+    }
+
+.entry_end {
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+blockquote {
+	font-size: 12px;
+	color: #333333;
+	margin: 10px 10px;
+	padding: 11px;
+	clear: none;
+	float: none;
+	border-top: 1px none snow;
+	border-right: 1px none snow;
+	border-bottom: 1px none snow;
+	border-left: 1px dotted #CCCCCC;
+    }
+
+
+.pict {
+    border: 1px none snow;
+}
+
+
+
+.links {
+    margin: 10px 0px 0px 10px;
+}
+
+
+.linktext {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 12px;
+    color: gray;
+    line-height: 150%;
+    margin: 10px 0px 20px 10px;
+}
+
+
+
+/* SEARCH---------------------------------------------------------------------- */
+.search {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 10px;
+    color: #333333;
+    line-height: 150%;
+    margin: 20px 0px 5px 20px;
+}
+
+.search_box {
+    margin: 0px 0px 5px 20px;
+}
+
+
+
+/* FOOTER---------------------------------------------------------------------- */
+.copyright {
+    font-family: "MS UI Gothic","ヒラギノ角ゴ Pro W3","Tahoma","Verdana","MS Pゴシック","Osaka";
+    font-size: 11px;
+    color: #333333;
+    line-height: 150%;
+}
+
+
+
+/* CALENDAR---------------------------------------------------------------------- */
+.calendar {
+    font-family: "Arial","Verdana","Osaka";
+    font-size: 10px;
+    color: gray;
+    margin: 5px 14px 20px 14px;
+    border: 1px solid #CCCCCC;
+}
+
+.cell {
+    width: 27px;
+    height: 17px;
+    padding: 1px;
+}
+
+.admin{
+	filter: Alpha(opacity=0);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 0px;
+}
