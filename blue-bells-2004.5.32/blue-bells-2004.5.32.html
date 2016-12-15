@@ -1,0 +1,345 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={site_encoding}">
+<title>{site_title}</title>
+<link rel="stylesheet" href="{site_css}" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{site_rss}">
+<link rel="alternate" type="application/atom+xml" href="{site_atom}">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="admin">{ad}</div>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+	<td colspan="5"> <p><a name="top"></a> 
+		<!-- BEGIN title -->
+		<div id="title"><span class="site_title">{blog_name}</span> - <span class="description">日々徒然日記。<a href="http://www.blueb.jp/" target="_top">{blog_description}</a></span></div> 
+		<!-- END title -->
+	  </p></td>
+  <tr> 
+	<td width="240" valign="top" class="back" bgcolor="#FFEEEE"> <br />
+	  <div> 
+		<div class="linktitle" align="center">Calendar </div>
+		<div class="calendar" align="center"> 
+		  <table border="0" cellspacing="1" cellpadding="1px">
+			<tr> 
+			  <td class="weekday" width="27px" height="17px"><font color="red">Sun</font></td>
+			  <td class="weekday" width="27px" height="17px">Mon</td>
+			  <td class="weekday" width="27px" height="17px">Tue</td>
+			  <td class="weekday" width="27px" height="17px">Wed</td>
+			  <td class="weekday" width="27px" height="17px">Thu</td>
+			  <td class="weekday" width="27px" height="17px">Fri</td>
+			  <td class="weekday" width="27px" height="17px"><font color="blue">Sat</font></td>
+			</tr>
+		  </table>
+		  {calendar}</div>
+	  </div>
+	  <div class="linktext"></div>
+	  <!--new entries-->
+	  <!-- BEGIN latest_entry -->
+	  <div> 
+		<div class="linktitle"> New Entries </div>
+		<div class="linktext" id="newentrylist"> {latest_entry_list} </div>
+	  </div>
+	  <!-- END latest_entry -->
+	  <!-- BEGIN recent_comment -->
+	  <div> 
+		<div class="linktitle"> Recent Comments </div>
+		<div class="linktext" id="commentlist"> 
+{recent_comment_list} </div>
+	  </div>
+	  <!-- END recent_comment -->
+	  <!-- BEGIN recent_trackback -->
+	  <div> 
+		<div class="linktitle"> Recent Trackback </div>
+		<div class="linktext" id="tblist"> {recent_trackback_list} </div>
+	  </div>
+	  <div> 
+		<div class="linktitle"> Blog People </div>
+		<div class="linktext"><script language="javascript" type="text/javascript" src="http://www.blogpeople.net/display/usr/0f0d4b545f5e4103.js"></script><br />
+		<a href="javascript:void(bloppop=window.open('http://www.blogpeople.net/addlink.jsp?n=1&u=http%3A%2F%2Fblueb.jugem.cc%2F&ti='+escape(document.title),'blop','scrollbars=no,width=475,height=350,left=75,top=175,status=yes,resizable=yes'));">bluebellsを登録 by BlogPeople</a></div>
+	  </div>
+	  <div> 
+		<div class="linktitle"> DRECOM RSS </div>
+		<div class="linktext"><script language="javascript" src="http://list.blog.rss.drecom.jp/blueb/" charset="UTF-8"></script></div>
+	  </div>
+		<div class="linktitle"> Myblog List </div>
+		<div class="linktext"><script language="javascript" type="text/javascript" src="http://list.myblog.jp/list/js?code=76fbebe3a052a4d71555602a72caab65" charset="EUC-JP"></script></div>
+	  </div>
+	  <div> 
+		<div class="linktitle"> Blog People Birthday Blog </div>
+		<div class="linktext"><script language="javascript" type="text/javascript" src="http://www.blogpeople.net/display/usr/bb_b_euc.js"></script></div>
+	  </div>
+	  <!-- END recent_trackback --> 
+	</td>
+	<td width="10" valign="top" bgcolor="#FFCCCC"><img src="../template/flat/img/blank.gif" width="10" height="1" /> 
+	</td>
+	<td valign="top" class="back"> 
+ <div class="entry_link" align="center"> 
+		<!-- BEGIN sequel -->
+		<a href="{prev_permalink}">＜previous	「{prev_title}」</a> | <a href="./">home</a> | <a href="{next_permalink}">「{next_title}」 next＞</a>
+		<!-- END sequel --></div>
+
+	  <div align="center"><script type="text/javascript"><!--
+	  google_ad_client = "pub-0651667459759513";
+	  google_ad_width = 468;
+	  google_ad_height = 60;
+	  google_ad_format = "468x60_as";
+	  google_ad_channel ="9056530810";
+	  google_ad_type = "text_image";
+	  google_color_border = "FFCCCC";
+	  google_color_bg = "FFFAFA";
+	  google_color_link = "555555";
+	  google_color_url = "CCCCCC";
+	  google_color_text = "666666";//--></script>
+	  <script type="text/javascript"   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+	  <div class="description"> 
+		<!-- BEGIN entry -->
+	  </div>
+	  <div class="entry"> 
+		<div class="entry_date">{entry_date}</div>
+		<div class="entry_title">{entry_title}</div>
+		<div class="entry_body"> {entry_description} </div>
+		<div class="entry_more"> {entry_sequel} </div>
+		<div class="entry_state"> | {category_name} | {entry_time} | {comment_num} 
+		  | {trackback_num} | <BR/>
+		  <div class="entry_end">{entry_end}</div>
+		</div>
+	  </div>
+	  {trackback_auto_discovery} 
+	  <!-- END entry -->
+	  <!-- BEGIN comment_area -->
+	  <a name="comments"></a>
+	  <div class="entry"> 
+		<div class="entry_date">Comments!!</div>
+		<!-- BEGIN comment -->
+		<div> 
+		  <div class="entry_body"> {comment_description} </div>
+		  <div class="entry_state"> | {comment_name} | {comment_time} | </div>
+		</div>
+		<!-- END comment -->
+		<div class="entry_date">Transmission box</div>
+		<div class="entry_body"> 
+		  <form action="./?mode=comment" method="post">
+			<input type="hidden" name="entry_id" value="{entry_id}" />
+			<label for="name">name:</label>
+			<br/>
+			<input type="text" tabindex="1" name="name" id="name" value="{cookie_name}" />
+			<br />
+			<label for="email">email:</label>
+			<br>
+			<input type="text" tabindex="2" name="email" id="email" value="{cookie_email}" />
+			<br />
+			<label for="url">url:</label>
+			<br>
+			<input type="text" tabindex="3" name="url" id="url" value="{cookie_url}" />
+			<br />
+			<label for="description">comments:</label>
+			<br />
+			<textarea tabindex="4" id="description" name="description" rows="10" cols="50" style="width:400px;"></textarea>
+			<br />
+			<br />
+			<input type="submit" value="コメント送信" />
+			<input type="checkbox" name="set_cookie" value="1" id="set_cookie">
+			<label for="set_cookie">Cookieに登録</label>
+		  </form>
+		</div>
+	  </div>
+	  <!-- END comment_area -->
+	  <!-- BEGIN trackback_area -->
+	  <a name="trackback"></a> <div class="entry"> 
+		<div> 
+		  <div class="entry_date">Trackback URL</div>
+		  <div class="entry_body"> {trackback_url} </div>
+		</div>
+	  <!-- BEGIN trackback -->
+	  <div class="entry_date">▼Trackback Thanks!</div>
+	  <div> 
+		<div class="entry_title">{trackback_title}</div>
+		<div class="entry_body">{trackback_excerpt}</div>
+		<div class="entry_state"> | {trackback_blog_name} | {trackback_time} | 
+		</div>
+	  </div>
+	  <!-- END trackback --></div>
+	  <!-- END trackback_area -->
+	  <!-- BEGIN profile_area -->
+	  <div> 
+		<div class="entry"> 
+		  <div class="entry_date">profile</div>
+		  <div class="entry_body">{profile_description}<br />
+		<a href="http://kotonoha.cc/home" target="_blank">コトノハ</a>
+		<script type="text/javascript" src="http://kotonoha.cc/?mode=js&act=koto_roll&uname=blueb&max=30&type=0" charset="utf-8"></script></div>
+		</div>
+	  </div>
+	  <!-- END profile_area -->
+	  <!--foot-->
+	  <div align="right" style="margin-right: 10px;"><a href="#top">このページの先頭へ 
+		</a></div>
+	  <br /> <br /> <div class="copyright" align="right"><font size="1">Copyright 
+		(C) 2004 <a href="http://paperboy.co.jp" target="_blank">paperboy&co.</a> 
+		All Rights Reserved.</font> </div></td>
+	<!--CENTER-->
+	<td width="10" valign="top" bgcolor="#CCCCFF"><img src="../template/flat/img/blank.gif" width="10" height="1"> 
+	</td>
+	<!--LEFT-->
+	<td width="200" valign="top" class="back" bgcolor="#EEEEFF"> <br /> 
+
+	  <div class="linktitle"> Paipo Reader </div>
+	  <div class="linktext"> <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="162" height="39" id="type3" align="middle">
+	  <param name="allowScriptAccess" value="sameDomain" />
+	  <param name="movie" value="http://paipo.jp//ticker/type3.swf" />
+	  <param name="quality" value="high" />
+	  <param name="bgcolor" value="#ffffff" />
+	  <param name="FlashVars" value="BASE_URI=http://paipo.jp/&USER_ID=blueb" />
+	  <embed src="http://paipo.jp//ticker/type3.swf" FlashVars="BASE_URI=http://paipo.jp/&USER_ID=blueb" quality="high" bgcolor="#ffffff" width="162" height="39" name="type3" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	  </object> </div>
+
+	  <!-- BEGIN amazon -->
+	  <div class="linktitle"> Recommended goods </div>
+	  <div class="linktext"> {amazon_item} </div>
+	  <!-- END amazon -->
+	  <!-- BEGIN profile -->
+	  <div> 
+		<div class="linktitle"> Profile </div>
+		<div class="entry_title"> {profile_name} </div>
+		<div class="linktext"> {user_list} </div>
+	  </div>
+	  <!-- END profile -->
+	  <!-- BEGIN category -->
+	  <div> 
+		<div class="linktitle"> Categories </div>
+		<div class="linktext"> {category_list} </div>
+	  </div>
+	  <!-- END category -->
+	  <!-- BEGIN archives -->
+	  <div> 
+		<div class="linktitle"> Archives </div>
+		<div class="linktext"> {archives_list} </div>
+	  </div>
+	  <!-- END archives -->
+	  <div> 
+		<div class="linktitle"> コトノハ </div>
+		<div class="linktext"><script type="text/javascript" src="<script type="text/javascript" src="http://kotonoha.cc/?mode=js&act=koto_roll&uname=blueb&max=16&type=1" charset="utf-8"></script>
+" charset="utf-8"></script>
+ </div>
+	  </div>
+	  <!-- BEGIN link -->
+	  <div> 
+		<div class="linktitle"> Links </div>
+		<div class="linktext"> {link_list} </div>
+	  </div>
+	  <!-- END link -->
+	  <div> 
+		<div class="linktitle"> Others </div>
+		<div class="linktext"> 
+		  <ul>
+			<li> <a href="./?mode=rss">RSS1.0</a></li>
+			<li><a href="./?mode=atom">Atom0.3</a></li>
+			<li><a href="http://jugem.cc" target="_blank"><img src="../template/banner/jugem_blue01.gif" width="128" height="22" alt="ブログのレンタルサービス JUGEM" border="0" /></a> 
+			<li><a href="http://paperboy.co.jp/" target="_blank"><img src="../template/banner/paperboy_red01.gif" width="128" height="22" alt="paperboy&co." border="0" /></a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	  <!--search-->
+	  <div> 
+		<form method="get" action="">
+		  <div class="search"> Search this site. </div>
+		  <div class="search_box"> 
+			<input id="search" name="search" size="15" class="form" />
+			<input type="submit" value="Search" class="button" />
+		  </div>
+		</form>
+	  </div></td>
+  </tr>
+</table>
+<script type="text/javascript">
+<!--
+TreeList('commentlist'); /* 最新コメントのツリー化 */
+TreeList('tblist'); /* 最新トラックバックのツリー化 */
+function TreeList(idName) {
+  var treeText = '⇒'; /* ツリー用マーク */
+  var objFocus = this.document.getElementById(idName);
+  if (!objFocus) return;
+  var objLists = objFocus.getElementsByTagName('li');
+  var listBase = new Array();
+  var listElem = new Array();
+  var outText = new Array();
+  if (objLists.length > 0) {
+    for (i = 0;i < objLists.length;i++) {
+      var txtList = objLists[i].innerHTML.split('⇒');
+      var flagCheck = true;
+      var tempElem = new Array(treeText,txtList[1],'<br />');
+      var elemText = tempElem.join('');
+      for (j = 0; j < listBase.length; j++) {
+        if ( listBase[j].indexOf(txtList[0]) > -1 ) {
+          flagCheck = false;
+          listElem[j] += elemText;
+        }
+      }
+      if (flagCheck) {
+        listBase[listBase.length] = txtList[0];
+        listElem[listElem.length] = elemText;
+      } 
+    }
+    outText[outText.length] = '<ul>¥n';
+    for (i = 0;i < listBase.length;i++) {
+      outText[outText.length] = '<li>';
+      outText[outText.length] = listBase[i];
+      outText[outText.length] = listElem[i];
+      outText[outText.length] = '</li>¥n';
+    }
+    outText[outText.length] = '</ul>¥n';
+    objFocus.innerHTML = outText.join('');
+  }
+}
+// -->
+<!--
+TreeEntry('newentrylist'); /* 最新エントリのツリー化 */
+function TreeEntry(idName) {
+  var markText = '⇒ '; /* ツリー用マーク */
+  var objFocus = this.document.getElementById(idName);
+  if (!objFocus) return;
+  var objLists = objFocus.getElementsByTagName('li');
+  var listBase = new Array();
+  var listElem = new Array();
+  var outText = new Array();
+  if (objLists.length > 0) {
+    for (i = 0;i < objLists.length;i++) {
+      var linkUri = objLists[i].firstChild.getAttribute('href');
+      var linkTxt = objLists[i].getElementsByTagName('a')[0].firstChild.nodeValue;
+      objLists[i].innerHTML.match(/¥((¥d¥d¥/¥d¥d)¥)/);
+      var txtDate = RegExp.$1;
+      var tmpElem = new Array(markText,'<a href="',linkUri,'">',linkTxt,'</a><br />');
+      var txtEntr = tmpElem.join('');
+      var flagCheck = true;
+      for (j = 0; j < listBase.length; j++) {
+        if ( listBase[j].indexOf(txtDate) > -1 ) {
+          flagCheck = false;
+          listElem[j] += txtEntr;
+        }
+      }
+      if (flagCheck) {
+        listBase[listBase.length] = txtDate;
+        listElem[listElem.length] = txtEntr;
+      } 
+    }
+    outText[outText.length] = '<ul>¥n';
+    for (i = 0;i < listBase.length;i++) {
+      outText[outText.length] = '<li><strong>[';
+      outText[outText.length] = listBase[i];
+      outText[outText.length] = ']</strong><br />';
+      outText[outText.length] = listElem[i];
+      outText[outText.length] = '</li>¥n';
+    }
+    outText[outText.length] = '</ul>¥n';
+    objFocus.innerHTML = outText.join('');
+  }
+}
+// -->
+
+</script>
+</body>
+</html>
